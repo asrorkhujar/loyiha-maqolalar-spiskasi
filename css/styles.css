@@ -113,10 +113,15 @@ display: flex;
 
 .article-right{
   width: 610px;
-  background-color: #fff;
+  height: 700px;
+  background-color: var(--text-color-white);
   font-weight: bold;
 }
 
+.article-all{
+  display: flex;
+
+}
 
 
 
