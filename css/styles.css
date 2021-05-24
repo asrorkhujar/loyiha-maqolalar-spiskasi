@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root{
+  --bg-color-primary:cyan;
+  --text-color-white:#fff;
+  --text-color-black:#000;
+  --bg-color-secondary:rgba(105, 167, 149, 0.8);
+}
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg-color-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+.article-left{
+width: 500px;
+height: 700px;
+padding: 250px 30px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.4),
+rgba(0, 0, 0, 0.4)),url(../img/background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+color: var(--text-color-white);
+display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-left-head{
+  width: 300px;
+}
+
+.left-title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+.left-content{
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.media-file{
+  width: 135px;
+  background-color: var(--bg-color-secondary);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 15px 15px;
+  color: var(--text-color-white);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.media-file::before{
+  content: "";
+  background-image: url(../img/file.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.article-right{
+  width: 610px;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
